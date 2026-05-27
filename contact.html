@@ -13,14 +13,23 @@
             </nav>
             <div>
                 <h1>Contact Me</h1>
-                <h2>Durga Mahicherla</h2>
+                <!--<h2>Durga Mahicherla</h2>html/css-->
+                <h2 id="nameDisplay">Durga Mahicherla</h2>
                 <p>📍 Godavari Global University,Andhra Pradesh</p>
                 <p>🎓 B-Tech CSE-(AI & ML) -2nd year</p>
                 <a href="mailto:durgamahicherla@gmail.com">durgamahicherla@gmail.com</a>
                 <p>Ph no:#</p>
-                <textarea placeholder="write your message here..." rows="5" cols="40"></textarea>
-                <button>Send</button><br>
+                <!--<textarea placeholder="write your message here..." rows="5" cols="40"></textarea>
+                <button>Send</button><br>-->
+                <!-- Add id to textarea and button-->
+                <textarea id="messageBox"
+                    placeholder="Write your message here..."
+                    rows="5" cols="40"></textarea>
+                    <br>
+                    <button onclick="validateForm()">Send Message</button>
+                    <p id="formResult"></p>
                 <a href="https://www.linkedin.com/in/durga-mahicherla-085165384?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank">Visit my LinkdIn</a>
             </div>
+            <script src="contact.js"></script>
     </body>
 </html>
